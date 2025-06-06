@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Domain", "src\Booki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Application", "src\Bookify.Application\Bookify.Application.csproj", "{783F5AF2-A11A-47DC-8FF0-AD5178E32C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Infrastructure", "Bookify.Infrastructure\Bookify.Infrastructure.csproj", "{333EDFDD-4952-41C3-9C40-78E13498B4A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Infrastructure", "src\Bookify.Infrastructure\Bookify.Infrastructure.csproj", "{5B46442D-2A66-44ED-9A73-47872AC32EE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,7 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2F8BC3FB-8B16-4BC9-9D17-1A440C50E4C9} = {B4D18896-1FFB-4D88-8004-0BCBBD8EC13E}
 		{783F5AF2-A11A-47DC-8FF0-AD5178E32C92} = {B4D18896-1FFB-4D88-8004-0BCBBD8EC13E}
-		{333EDFDD-4952-41C3-9C40-78E13498B4A7} = {B4D18896-1FFB-4D88-8004-0BCBBD8EC13E}
+		{5B46442D-2A66-44ED-9A73-47872AC32EE2} = {B4D18896-1FFB-4D88-8004-0BCBBD8EC13E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2F8BC3FB-8B16-4BC9-9D17-1A440C50E4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,9 +29,9 @@ Global
 		{783F5AF2-A11A-47DC-8FF0-AD5178E32C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{783F5AF2-A11A-47DC-8FF0-AD5178E32C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{783F5AF2-A11A-47DC-8FF0-AD5178E32C92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{333EDFDD-4952-41C3-9C40-78E13498B4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{333EDFDD-4952-41C3-9C40-78E13498B4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{333EDFDD-4952-41C3-9C40-78E13498B4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{333EDFDD-4952-41C3-9C40-78E13498B4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B46442D-2A66-44ED-9A73-47872AC32EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B46442D-2A66-44ED-9A73-47872AC32EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B46442D-2A66-44ED-9A73-47872AC32EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B46442D-2A66-44ED-9A73-47872AC32EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
