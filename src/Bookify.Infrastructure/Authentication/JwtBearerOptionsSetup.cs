@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 
 namespace Bookify.Infrastructure.Authentication
 {
-    internal sealed class JwtBearerOptionsSetup
+    internal sealed class JwtBearerOptionsSetup : IConfigureNamedOptions<JwtBearerOptions>
     {
         private readonly AuthenticationOptions _authenticationOptions;
 
