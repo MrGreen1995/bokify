@@ -410,3 +410,7 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+/.vs/Bookify/DesignTimeBuild/.dtbcache.v2
+/.vs/ProjectEvaluation/bookify.metadata.v9.bin
+/.vs/ProjectEvaluation/bookify.projects.v9.bin
+/.vs/ProjectEvaluation/bookify.strings.v9.bin
