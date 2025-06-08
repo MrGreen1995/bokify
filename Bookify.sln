@@ -12,9 +12,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Infrastructure", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Api", "src\Bookify.Api\Bookify.Api.csproj", "{FCD45893-DCF6-4E07-B9B1-94B1C65EAECE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2647515-17A4-44A1-894D-74B1171F5DE7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{268ED249-6608-41ED-B01F-C6B0F4AEFA12}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.override.yaml = docker-compose.override.yaml
+		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
 Global
