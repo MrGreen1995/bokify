@@ -40,7 +40,7 @@ internal sealed class SearchApartmentsQueryHandler : IQueryHandler<SearchApartme
                                a.price_currency as Currency,
                                a.address_country as Country,
                                a.address_state as State,
-                               a.address_zip as ZipCode,
+                               a.address_zip_code as ZipCode,
                                a.address_city as City,
                                a.address_street as Street
                            FROM apartments a
