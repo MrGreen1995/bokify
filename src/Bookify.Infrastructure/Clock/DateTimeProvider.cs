@@ -2,7 +2,7 @@
 
 namespace Bookify.Infrastructure.Clock;
 
-public class DateTimeProvider :IDateTimeProvider
+public class DateTimeProvider : IDateTimeProvider
 {
     public DateTime UtcNow => DateTime.UtcNow;
 }
