@@ -1,4 +1,5 @@
-﻿using Bookify.Application.Abstractions.Data;
+﻿using Bookify.Application.Abstractions.Authentication;
+using Bookify.Application.Abstractions.Data;
 using Bookify.Application.Abstractions.Messaging;
 using Bookify.Domain.Abstractions;
 using Bookify.Domain.Bookings;
@@ -9,10 +10,12 @@ namespace Bookify.Application.Bookings.GetBooking;
 internal sealed class GetBookingQueryHandler : IQueryHandler<GetBookingQuery, BookingResponse>
 {
     private readonly ISqlConnectionFactory _sqlConnectionFactory;
+    private readonly IUserContext _userContext;
 
-    public GetBookingQueryHandler(ISqlConnectionFactory sqlConnectionFactory)
+    public GetBookingQueryHandler(ISqlConnectionFactory sqlConnectionFactory, IUserContext userContext)
     {
         _sqlConnectionFactory = sqlConnectionFactory;
+        _userContext = userContext;
     }
     
     public async Task<Result<BookingResponse>> Handle(GetBookingQuery request, CancellationToken cancellationToken)
@@ -40,11 +43,16 @@ internal sealed class GetBookingQueryHandler : IQueryHandler<GetBookingQuery, Bo
                            WHERE BookingId = @BookingId 
                            """";
         
-        var booking = await connection.QueryFirstOrDefaultAsync<Booking>(sql, new
+        var booking = await connection.QueryFirstOrDefaultAsync<BookingResponse>(sql, new
         {
             request.BookingId
         });
-        
-        throw new NotImplementedException();
+
+        if (booking is null || booking.UserId != _userContext.UserId)
+        {
+            return Result.Failure<BookingResponse>(BookingErrors.NotFound);
+        }
+
+        return booking;
     }
 }

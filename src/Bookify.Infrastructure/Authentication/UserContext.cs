@@ -12,7 +12,7 @@ namespace Bookify.Infrastructure.Authentication
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public Guid UserId => _httpContextAccessor
+        public Guid  UserId => _httpContextAccessor
             .HttpContext?
             .User
             .GerUserId() ??
